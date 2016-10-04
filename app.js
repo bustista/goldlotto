@@ -5,7 +5,7 @@ app.get('/', function (req, res) {
     res.send('Gold Lotto')
 });
 app.get('/transfer', function (req, res) {
-    res.send('Account Transferd')
+    res.send('Account Transfer')
 });
 app.listen(port, function (err) {
     console.log('running server on port ' + port);
