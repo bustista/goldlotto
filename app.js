@@ -1,8 +1,11 @@
 var express = require('express');
 var app = express();
 var port = 5000;
+
+app.use(express.static('public'));
+app.use(express.static('src/views'));
 app.get('/', function (req, res) {
-    res.send('Gold Lotto')
+    res.send('<h1>Gold Lotto</h1>')
 });
 app.get('/transfer', function (req, res) {
     res.send('Account Transfer')
